@@ -7,7 +7,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Learning Journal</title>
   </head>
   <body>
@@ -20,67 +21,28 @@
       <nav id="navbar"></nav>
     </header>
 
-    <section class="hero-post">
-      <!-- <h3>July 23, 2022</h3>
-      <h1>My new journey as a bootcamp student.</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Architecto est expedita ratione ab, fuga nesciunt porro pariatur
-        quis officia voluptas quae eligendi voluptatem commodi ea eveniet eum,
-        accusantium soluta, culpa minus beatae.
-        Debitis officiis dicta reiciendis similique eum quia sunt.</p> -->
-    </section>
+    <a href="../html/featured-post.html">
+      <section class="hero-post">
+        <span class="hero-date">July 23, 2022</span>
+        <h1 class="hero-title">My new journey as a bootcamp student.</h1>
+        <p class="hero-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Architecto est expedita ratione ab, fuga nesciunt porro pariatur
+          quis officia voluptas quae eligendi voluptatem commodi ea eveniet eum,
+          accusantium soluta, culpa minus beatae.
+          Debitis officiis dicta reiciendis similique eum quia sunt.</p>
+      </section>
+    </a>
 
-    <main class="blog-grid">
-      <div class="blog-one">
-        <img src="./images/blog-img1.png" alt="laptop computer picture">
-        <span class="blog-date">July 23, 2022</span>
-        <h1 class="blog-title">Blog one</h1>
-        <p class="blog-article-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Hic eius facere perspiciatis non atque libero?
-          Culpa fuga provident fugiat quas.</p>
-      </div>
-      <div class="blog-one">
-        <img src="./images/blog-img1.png" alt="laptop computer picture">
-        <span class="blog-date">July 23, 2022</span>
-        <h1 class="blog-title">Blog one</h1>
-        <p class="blog-article-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Hic eius facere perspiciatis non atque libero?
-          Culpa fuga provident fugiat quas.</p>
-      </div>
-      <div class="blog-one">
-        <img src="./images/blog-img1.png" alt="laptop computer picture">
-        <span class="blog-date">July 23, 2022</span>
-        <h1 class="blog-title">Blog one</h1>
-        <p class="blog-article-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Hic eius facere perspiciatis non atque libero?
-          Culpa fuga provident fugiat quas.</p>
-      </div>
-      <div class="blog-one">
-        <img src="./images/blog-img1.png" alt="laptop computer picture">
-        <span class="blog-date">July 23, 2022</span>
-        <h1 class="blog-title">Blog one</h1>
-        <p class="blog-article-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Hic eius facere perspiciatis non atque libero?
-          Culpa fuga provident fugiat quas.</p>
-      </div>
-      <div class="blog-one">
-        <img src="./images/blog-img1.png" alt="laptop computer picture">
-        <span class="blog-date">July 23, 2022</span>
-        <h1 class="blog-title">Blog one</h1>
-        <p class="blog-article-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Hic eius facere perspiciatis non atque libero?
-          Culpa fuga provident fugiat quas.</p>
-      </div>
-      <div class="blog-one">
-        <img src="./images/blog-img1.png" alt="laptop computer picture">
-        <span class="blog-date">July 23, 2022</span>
-        <h1 class="blog-title">Blog one</h1>
-        <p class="blog-article-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Hic eius facere perspiciatis non atque libero?
-          Culpa fuga provident fugiat quas.</p>
-      </div>
+
+    <main class="blog-grid" id="blog-grid">
+
     </main>
+
+    <span class="view-more">
+      <button>View More</button>
+    </span>
+    
     <footer id="footer"></footer>
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
