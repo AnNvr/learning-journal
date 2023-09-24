@@ -19,21 +19,30 @@
             <img src="../images/logo.png" alt="logo">
             <h2>My learning journal</h2>
         </div>
-        <nav id="navbar"></nav>
+        <div id="nav-el" class="nav-items">
+            <a class="nav-item" href="../index.html">Home</a>
+            <a class="nav-item" href="../html/about.html">About me</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
 
     <div class="wrapper">
         <article class="about-me-article">
             <div class="about-me-container">
                 <img src="../images/me.jpg" alt="subject pic-profile">
-                <h1 class="about-me-title">
-                    Hi there! My name is Andrea and welcome to my learning journal.
-                </h1>
-                <p>
-                    After several months of learning in the Frontend Developer Career Path,
-                    I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects
-                    projects and meet like-minded peers.
-                </p>
+                <div class="about-me-intro">
+                    <h1 class="about-me-title">
+                        Hi there! My name is Andrea and welcome to my learning journal.
+                    </h1>
+                    <p>
+                        After several months of learning in the Frontend Developer Career Path,
+                        I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects
+                        projects and meet like-minded peers.
+                    </p>
+                </div>
             </div>
 
             <div>
