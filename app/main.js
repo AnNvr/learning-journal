@@ -1,7 +1,9 @@
+console.log("main.js loaded")
 import blogArray from "/data.js"
 
 const blogGridEl = document.getElementById("blog-grid");
-const recentPostEl = document.getElementById("recent-post-el")
+const recentPostEl = document.getElementById("recent-post-el");
+
 
 document.addEventListener("DOMContentLoaded", () => {
   function renderBlog(){
@@ -54,19 +56,15 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(footer => {
       document.getElementById("footer").innerHTML = footer
     });
-  
-  // hamburger menu mechanics
-  // function toggleMenu(){
-  //   let navEl = document.getElementById("nav-el");
-  
-  //   if (navEl.style.display === "block"){
-  //     navEl.style.display = "none"
-  //   } else {
-  //     navEl.style.display = "block"
-  //   }
-  // }
+
   // footer date
   const copyrightYear = document.getElementById("copyright-year");
   const currentYear = new Date().getFullYear();
   copyrightYear.textContent = currentYear;
 })
+
+export function toggleMenu(){
+  let navEl = document.getElementById("nav-el")
+  
+  navEl.style.display = navEl.style.display === "block" ? "none" : "block";
+}
